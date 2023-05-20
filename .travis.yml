@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  - docker
+
+jobs:
+  include:
+    - stage: Build and Push
+      name: Build and Push Images
+      script:
+        - docker-compose build
+        - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+        - docker-compose push
