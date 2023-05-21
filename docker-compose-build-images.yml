@@ -5,25 +5,21 @@ services:
       context: ./udagram-api-feed
       dockerfile: Dockerfile
     image: udagram-api-feed:latest
-    # Add any additional configuration for this service
 
   udagram-api-user:
     build:
       context: ./udagram-api-user
       dockerfile: Dockerfile
     image: udagram-api-user:latest
-    # Add any additional configuration for this service
 
   frontend:
     build:
       context: ./udagram-frontend
       dockerfile: Dockerfile
     image: udagram-frontend:local
-    # Add any additional configuration for this service
 
   reverseproxy:
     build:
       context: ./udagram-reverseproxy
       dockerfile: Dockerfile
     image: reverseproxy:latest
-    # Add any additional configuration for this service
