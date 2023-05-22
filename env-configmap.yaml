@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  POSTGRES_HOST: minhnh-db-dev.cxerxzwzvssv.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: minhnh-700674800047-dev
+  AWS_REGION: us-east-1
+  AWS_PROFILE: default
+  URL: http://localhost:8100
