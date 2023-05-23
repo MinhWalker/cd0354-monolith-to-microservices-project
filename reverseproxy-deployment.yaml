@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: minhwalker/udagram-reverseproxy:v1
+      - image: minhwalker/udagram-reverseproxy:v2
         name: reverseproxy
         imagePullPolicy: Always
         resources:
